@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body >
+    <!-- header -->
+    <header id="heaader" class="">
+        <!-- list of hig score button -->
+        <div><button onclick="scoreBord()">score board</button></div>
+
+        <!-- timer right  -->
+        <div id="time"><h2>time:</h2><h2 id="timer">00</h2></div>
+    </header>
+
+    <!-- start quiz -->
+    <section id="start_BT">
+        <button onclick="questionCreator()">start quiz</button>
+    </section>
+    <section id="Q-A_container">
+        <!-- questions -->
+        <section id="all_Questions">
+            <h1 id="quest"></h1>
+        </section>
+    
+        <!-- answers -->
+        <section id="all_Answers" class="bg-orange-600">
+
+            <!-- list of answers -->
+            <ol>
+                <li><button id="answer0" class ="answer" onclick="questionCreator(),chekAnswers(value)"></button></li>
+                <li><button id="answer1" class ="answer" onclick="questionCreator(),chekAnswers(value)"></button></li>
+                <li><button id="answer2" class ="answer" onclick="questionCreator(),chekAnswers(value)"></button></li>
+                <li><button id="answer3" class ="answer" onclick="questionCreator(),chekAnswers(value)"></button></li>
+            </ol>
+        </section>
+        
+        <section id="right_wrong">
+            <!-- right / wrong  -->
+            <h1></h1>
+        </section>
+    </section>
+    
+
+    <section id="finle_Score">
+
+        <!-- finale score/tiem -->
+        <h1> you score: <p id="score"></p></h1>
+
+        <!-- score -->
+        <h2 id="users_Name"> enter your name: <input type="text" id="users_Input"> </h2>
+
+        <!-- sends name to local storage -->
+        <button onclick="tableScore()">save name</button>
+    </section>
+
+    <section id="table_Score">
+        <ul id="list"></ul>
+    </section>
+    <script src="object.js"></script>
+</body>
+</html>

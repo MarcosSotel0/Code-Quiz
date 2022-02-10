@@ -1,0 +1,188 @@
+/* header  */
+#heaader{
+    /* background-color: blue; */
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#heaader div button{
+    background-color: purple;
+    border: black;
+    /* margin-right: 10px; */
+    color: #f5f6fa;
+    cursor:pointer;
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px 4px;
+    margin-bottom: 10px;
+}
+#heaader div button:hover{
+    background-color:rgb(204, 38, 204);
+}
+#timer{
+    margin:0;
+}
+#high_score:hover{
+}
+#time{
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+}
+#time h2{
+    margin: 0;
+}
+/* start BT */
+#start_BT{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+#start_BT button{
+    background-color: purple;
+    border: black;
+    /* margin-right: 10px; */
+    color: #f5f6fa;
+    cursor:pointer;
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px 4px;
+    margin-bottom: 10px;
+}
+#start_BT button:hover{
+    background-color:rgb(204, 38, 204);
+}
+/* questions and answers */
+#Q-A_container{
+    display: none;
+}
+#all_Questions{
+    display: flex;
+    justify-content: center;
+}
+#all_Answers{
+    display: flex;
+    justify-content: center;
+}
+.answer{
+    background-color: purple;
+    border: black;
+    /* margin-right: 10px; */
+    color: #f5f6fa;
+    cursor:pointer;
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px 4px;
+    margin-bottom: 10px;
+}
+.answer:hover{
+    background-color:rgb(204, 38, 204);
+}
+
+/* score ones don with test */
+#finle_Score{
+    display: none;
+}
+#finle_Score h1, h2{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+}
+#finle_Score h1 p{
+    margin-left: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#finle_Score h2{
+    margin: 0;
+}
+#finle_Score h2 input{
+    width: 100px;
+    
+}
+#finle_Score button{
+    margin-top: 15px;
+    background-color: purple;
+    border: black;
+    /* margin-right: 10px; */
+    color: #f5f6fa;
+    cursor:pointer;
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px 4px;
+    margin-bottom: 10px;
+}
+#finle_Score button:hover{
+    background-color:rgb(204, 38, 204);
+}
+
+#right_wrong h1{
+    color: rgb(204, 38, 204);
+}
+
+/* table score board */
+#table_Score{
+    display: none;
+}
+#table_List{
+display: flex;
+}
+#TS_Score{
+
+}
+#list{
+    display: flex;
+    flex-direction: column;
+}
+#TS_List{
+    display: flex;
+}
+#TS_Name{
+    background-color: purple;
+    border: black;
+    margin-right: -7px;
+    color: #f5f6fa;
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px;
+}
+#TS_Score{
+    background-color: purple;
+    border: black;
+    /* margin-right: 10px; */
+    color: #f5f6fa;
+    border-radius: 5px;
+    width: 10px;
+    padding: 10px;
+}
+
+/* activating on active */
+#Q-A_container.active{
+    margin-left:25%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#finle_Score.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+}
+#table_Score.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+}
